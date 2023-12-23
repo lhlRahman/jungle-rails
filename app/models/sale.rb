@@ -12,7 +12,7 @@ class Sale < ApplicationRecord
     def upcoming?
       starts_on > Date.current
     end
-  
+      
     def active?
       !upcoming? && !finisheds
     end
